@@ -15,6 +15,7 @@
 const GOOGLE_ORIGIN = 'https://www.google.com.hk';
 const BL_ORIGIN = 'https://www.bilibili.com';
 const TW_ORIGIN = 'https://twitter.com';
+const GITHUB_ORIGIN = 'https://github.com';
 
 // Allows users to open the side panel by clicking on the action toolbar icon
 chrome.sidePanel
@@ -25,7 +26,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
     if (!tab.url) return;
     const url = new URL(tab.url);
     // Enables the side panel on google.com
-    if (url.origin === GOOGLE_ORIGIN || url.origin === BL_ORIGIN || url.origin === TW_ORIGIN) {
+    if (url.origin === GOOGLE_ORIGIN || url.origin === BL_ORIGIN || url.origin === TW_ORIGIN || url.origin === GITHUB_ORIGIN) {
         await chrome.sidePanel.setOptions({
             tabId,
             path: 'sidepanel.html',
