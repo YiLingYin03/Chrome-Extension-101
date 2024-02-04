@@ -2,6 +2,7 @@
 
 ## Open a New Tab:
 Windows/Linux: `Ctrl + T`
+
 Mac: `Command + T`
 
 ## Close Current Tab:
@@ -40,4 +41,4 @@ Mac: `Command + F`
 
 ## Open Chrome Task Manager:
 Windows/Linux: `Shift + Esc`
-Mac: `Command + Option + Esc``
+Mac: `Command + Option + Esc`
